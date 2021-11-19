@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import AboutMe from './pages/aboutme';
 import Contact from './pages/contact';
 import Portfolio from './pages/portfolio';
@@ -11,13 +11,16 @@ const Main = () => {
     let pageLocation = window.location.pathname;
 
     const renderPage = (pageLocation) => {
+        if(window.location.pathname === '/') {
+            return <AboutMe />;
+        }
         if(window.location.pathname === '/about') {
            return <AboutMe />;
         }
         if(window.location.pathname === '/contact') {
             return <Contact />;
         }
-        if(window.location.pathname === '/portfolio') {
+        if(window.location.pathname === '/projects') {
             return <Portfolio />;
         }
         if(window.location.pathname === '/resume') {
@@ -27,9 +30,9 @@ const Main = () => {
     return (
         <div>
             <Header />
-            <body>
+            
             {renderPage(pageLocation)}
-            </body>
+            
             <Footer />
         </div>
     )

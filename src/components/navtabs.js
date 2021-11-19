@@ -18,7 +18,7 @@ export default function NavTabs({currentPage, setCurrentPage}) {
                                 <Link class="nav-link" to='/contact' onClick={() => handlePageChange('Contact')}>Contact</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to='/portfolio' onClick={() => handlePageChange('Portfolio')}>Portfolio</Link>
+                                <Link class="nav-link" to='/projects' onClick={() => handlePageChange('Portfolio')}>Portfolio</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to='/resume' onClick={() => handlePageChange('Resume')}>Resume</Link>

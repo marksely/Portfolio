@@ -14,8 +14,8 @@ const Header = () => {
         if(window.location.pathname === '/contact') {
             setCurrentPage('Contact');
         }
-        if(window.location.pathname === '/portfolio') {
-            setCurrentPage('Portfolio');
+        if(window.location.pathname === '/projects') {
+            setCurrentPage('projects');
         }
         if(window.location.pathname === '/resume') {
             setCurrentPage('Resume');
